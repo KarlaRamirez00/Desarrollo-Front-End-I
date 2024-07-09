@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succulent Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="img/assets/leaf.png" alt="leaf" class="logo">
+            <h2>EasyBay</h2>
+        </section>
+        <input type="text" placeholder="Search for anything">
+        <a href="#">Sign In</a>
+        <a href="#"><img src="img/assets/cart-dark.png" alt="Carrito de compras" class="cart" onclick="alerta(this)"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Aeonium</a></li>
+            <li><a href="#">Andormischus</a></li>
+            <li><a href="#">Agave</a></li>
+            <li><a href="#">Aloe</a></li>
+            <li><a href="#">Anacampseros</a></li>
+            <li><a href="#">Aristaloe</a></li>
+            <li><a href="#">More...</a></li>
+        </ul>
+    </nav>
+    <section><h1>Your Source for Serious Succulent Specialties</h1></section>
+
+    <!-- INICIO DEL CONTENEDOR PRINCIPAL -->
+    <div class="container">
+        
+        <main class="main-up">
+            <main class="main-up-izq">
+                <article>
+                    <p class="arrow-text">
+                        Discover succulent varieties one pot or rack at a time!
+                    </p>
+                    <section>
+                        <p class="arrow-text">
+                            Discover<img src="img/assets/arrow-light.png" alt="flecha">
+                        </p>   
+                    </section> 
+                </article>
+                    <img src="img/assets/succulents-1.jpg" alt="suculentas" onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)">
+            </main>
+
+            <main class="main-up-der">
+                <img src="img/assets/aloe-m.jpg" alt="aloe">
+                <article>                    
+                    <p class="arrow-text">
+                        Soothing aloe<img src="img/assets/arrow-light.png" alt="flecha">
+                    </p>
+                </article>
+            </main>
+        </main>
+
+        <main class="main-down">
+            <article>
+                <img src="img/assets/aeonium-s.jpg" alt="aeonium">
+                <p>Aeonium</p>
+            </article>
+            <article>
+                <img src="img/assets/aloe-s.jpg" alt="aloe">
+                <p>Aloe</p>
+            </article>
+            <article>
+                <img src="img/assets/cactus-s.jpg" alt="cactus">
+                <p>Cactus</p>
+            </article>
+            <article>
+                <img src="img/assets/echeveria-s.jpg" alt="echeveria">
+                <p>Echeveria</p>
+            </article>
+            <article>
+                <img src="img/assets/sedum-s.jpg" alt="sedum">
+                <p>Sedum</p>
+            </article>
+            <article>
+                <img src="img/assets/sempervivum-s.jpg" alt="sempervivum">
+                <p>Sempervivum</p>
+            </article>            
+        </main>   
+</div>
+
+<footer>
+    <img src="img/assets/alert-dark.png" alt="atención">
+    <p>This site makes use of third-party cookies, by clicking "I accept"
+    you agree to the<br> terms outlined in our <a href="#">cookie policity.</a></p>
+    <button onclick="eliminar_cookies()">I accept</button>
+</footer>
+
+    <script src="js/script.js"></script>    
+</body>
+</html>
